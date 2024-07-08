@@ -90,10 +90,10 @@ $deliveryRules = [
 ];
 
 $offers = [
-    new Offer('R01', 0.5) // 50% off on R01
+    new Offer('R01', 0.5)
 ];
 
 $basket = new Basket($catalogue, $deliveryRules, $offers);
 $basket->add('B01');
 $basket->add('G01');
-echo $basket->total(); // Output: 37.85
+echo $basket->total();
